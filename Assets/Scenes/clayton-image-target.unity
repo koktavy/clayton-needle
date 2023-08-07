@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028381, g: 0.22571406, b: 0.30692294, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -154,6 +154,73 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1597275518}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &576219696
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 576219697}
+  - component: {fileID: 576219699}
+  - component: {fileID: 576219698}
+  m_Layer: 0
+  m_Name: Image Target
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &576219697
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 576219696}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 1597275518}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &576219698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 576219696}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25d7e0f7729841bb9eb0e94b42437189, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TrackedImages:
+  - Image:
+      File: {fileID: 2800000, guid: 40449419eb4c98d40b50eaf5c7773d77, type: 3}
+    WidthInMeters: 0.1
+    Object:
+      asset: {fileID: 1198224061}
+    CreateObjectInstance: 0
+    ImageDoesNotMove: 0
+--- !u!114 &576219699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 576219696}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa3493724830445e9abb470aad0aec1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SuppressExport: 0
+  EmbedSkybox: 1
 --- !u!1 &706762903
 GameObject:
   m_ObjectHideFlags: 0
@@ -241,7 +308,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 706762903}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.097788066, y: -0.8736338, z: 0.19678175, w: 0.43414113}
+  m_LocalRotation: {x: 0.09778817, y: -0.8736337, z: 0.19678168, w: 0.43414125}
   m_LocalPosition: {x: 6.091816, y: 3.6271122, z: 4.6157355}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -356,7 +423,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Needle.Engine.Codegen.ComponentGenerator, Needle.Engine
     $ GlobalObjectId_V1-2-49068307165cdb346a242c48a6528235-784234925-0
-  compilerDirectory: X:/Projects/_2023/Clayton - AR Posters/clayton-needle/Assets/../Needle/newProject/node_modules/@needle-tools/needle-component-compiler/src
+  compilerDirectory: Needle/newProject/node_modules/@needle-tools/needle-component-compiler/src
   Debug: 0
 --- !u!114 &784234926
 MonoBehaviour:
@@ -468,7 +535,7 @@ GameObject:
   - component: {fileID: 1198224064}
   - component: {fileID: 1198224067}
   m_Layer: 0
-  m_Name: ImageTargetObj
+  m_Name: Video
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -483,9 +550,9 @@ Transform:
   m_GameObject: {fileID: 1198224061}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.35444736, y: 0.4705782, z: 0.04894018}
-  m_LocalScale: {x: 0.77, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalPosition: {x: -0.009, y: 0.008902254, z: -0.02}
+  m_LocalScale: {x: 0.010242044, y: 0.013301358, z: 0.013301358}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1597275518}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -680,6 +747,7 @@ GameObject:
   - component: {fileID: 1597275519}
   - component: {fileID: 1597275520}
   - component: {fileID: 1597275521}
+  - component: {fileID: 1597275522}
   m_Layer: 0
   m_Name: SceneRoot
   m_TagString: Untagged
@@ -695,7 +763,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1597275517}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -706,9 +774,10 @@ Transform:
   - {fileID: 284856215}
   - {fileID: 1609064307}
   - {fileID: 806518227}
+  - {fileID: 576219697}
   - {fileID: 1198224062}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!114 &1597275519
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -751,6 +820,19 @@ MonoBehaviour:
     $ GlobalObjectId_V1-2-49068307165cdb346a242c48a6528235-1597275521-0
   arScale: 1
   invertForward: 0
+--- !u!114 &1597275522
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1597275517}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9df10eacf89941469617695036f56e2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  repositoryUrl: https://github.com/koktavy/clayton-needle
 --- !u!1 &1609064305
 GameObject:
   m_ObjectHideFlags: 0
